@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar de paco</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        img="";
+        anteriorImg="";
+
+
+        function trocarImagen(y){
+            let matrix =['cambiar1','cambiar2','cambiar3'];
+            let matrix2=['coffe', 'coffe3', 'coffe4', 'blackcoffe'];
+            anteriorImg = "assets/imgs/"+matrix2[y]+".jpg";
+            img=document.getElementById(matrix[y]);
+            img.src = "assets/imgs/"+matrix2[3]+".jpg";
+        }
+        function voltarImagen(){
+            img.src = anteriorImg;
+        }
+    </script>
+</head>
+<body>
+    <header>
+
+        <h2>Bar de Paco</h2>
+
+    </header>
+    <main>
+        <section class="layoutGrid">
+            <figure id="img1" onmouseover="trocarImagen(0);" onmouseout="voltarImagen()">
+                <img id="cambiar1" src="assets/imgs/coffe.jpg" alt="">
+                <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</figcaption>
+            </figure>
+            
+            <figure id="img2">
+                <img id="cambiar2" src="assets/imgs/coffe3.jpg" alt="" onmouseover="trocarImagen(1);" onmouseout="voltarImagen()">
+                <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</figcaption>
+            </figure>
+
+            <figure id="img3">
+                <img id="cambiar3" src="assets/imgs/coffe4.jpg" alt="" onmouseover="trocarImagen(2);" onmouseout="voltarImagen()">
+                <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Título</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus adipisci nam repellendus soluta sunt blanditiis vero mollitia inventore! Illum nisi cum vitae placeat distinctio optio consequuntur impedit dolor corporis nostrum?</p>
+
+        </section>
+        <section>
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+            <img src="assets/imgs/coffe2.jpg" alt="">
+        </section>
+
+    </main>
+    <footer>
+        <h6>&copy;Copy Right Bar de Paco, 2021</h6>
+    </footer>
+</body>
+</html>

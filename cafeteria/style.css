@@ -1,0 +1,21 @@
+.layoutGrid{
+  
+    display: grid;
+    grid-column: 1fr 1fr 1fr;
+    grid-row: 1fr;
+    grid-template-areas: 'a1 a2 a3';
+
+}
+
+
+#img1{
+    grid-area: a1;
+
+}
+#img2{
+    grid-area: a2;
+}
+#img3{
+    grid-area: a3;
+    
+}
